@@ -140,7 +140,6 @@
       }
     }
   },
-  "defaultProject": "prueba-renting-jp",
   "cli": {
     "analytics": false,
     "defaultCollection": "@angular-eslint/schematics"
