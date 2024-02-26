@@ -1,0 +1,46 @@
+// STYLE REGISTER
+.page-register {
+  height: 100vh;
+  width: 100%;
+
+  &:before {
+    background-image: url('../../assets/images/empresa.jpeg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .card {
+    margin: -625px auto 0 auto;
+    width: 371px;
+
+    .card-title {
+      margin: 0;
+      padding: 0;
+
+      h1 {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .page-register {
+    .card {
+      margin: -600px auto 0 auto
+    }
+
+    &:before {
+      background-size: cover;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// STYLE GENERAL CARDS
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 1.15em;
+  -webkit-border-radius: 1.15em;
+  -moz-border-radius: 1.15em;
+  -ms-border-radius: 1.15em;
+  -o-border-radius: 1.15em;
+  padding: 1.5em;
+  margin: 0 0 1.35em 0;
+  border-width: 1px;
+  border-style: solid;
+
+  .card-title {
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    justify-content: left !important;
+
+    span {
+      font-family: rgba(194, 225, 21, 0.978);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 42.19px;
+    }
+  }
+  .card-subtitle{
+    span {
+      font-family: rgba(194, 225, 21, 0.978);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 18.75px;
+    }
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 0 0 0 0;
+  }
+}

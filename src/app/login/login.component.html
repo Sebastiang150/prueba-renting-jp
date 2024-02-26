@@ -1,1 +1,50 @@
-<p>login works!</p>
+<section class="page-login">
+  <div class="card">
+    <div class="row g-0 align-items-center">
+      <div class="col-12 col-sm-12 col-md-12 ">
+        <div class="card-title text-center">
+          <h1>Ingreso</h1>
+        </div>
+      </div>
+    </div>
+    <form novalidate [formGroup]="formLogin">
+      <div class="row g-0 mb-2">
+        <div class="col-md-12">
+          <label for="user" class="form-label">Usuario: </label>
+          <input type="text" id="user" class="form-control" formControlName="user">
+          <div class="swo-text-danger" *ngIf="getFormControl('user')?.invalid &&
+            (getFormControl('user')?.dirty || getFormControl('user')?.touched)">
+            <div *ngIf="getFormControl('user')?.errors?.['required']">
+              Este campo es requerido
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-0 mb-2">
+        <div class="col-md-12">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" id="password" class="form-control" formControlName="password">
+          <div class="swo-text-danger" *ngIf="getFormControl('password')?.invalid &&
+            (getFormControl('password')?.dirty || getFormControl('password')?.touched)">
+            <div *ngIf="getFormControl('password')?.errors?.['required']">
+              Este campo es requerido
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-sm-6 col-md-6 text-center mb-2">
+        <button class="btn btn-primary" (click)="login()" [disabled]="formLogin.invalid">
+          ingresar</button>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 text-center mb-2">
+        <button class="btn btn-primary" [routerLink]="'/registro'" [routerLinkActive]="'active'">
+          Registrase
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

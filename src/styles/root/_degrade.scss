@@ -1,0 +1,58 @@
+.bg-gradient-cosmic {
+  background-color: rgba(155, 0, 111, 1);
+  background: linear-gradient(45deg, rgba(155, 0, 111, 1) 0%, rgb(62, 0, 255)rgb(62, 0, 255) 100%);
+}
+
+.bg-gradient-burning {
+  background-color: rgba(155, 0, 111, 1);
+  background: linear-gradient(45deg, rgba(155, 0, 111, 1) 0%, rgb(237, 28, 39) 100%);
+}
+
+.bg-gradient-lush {
+  background-color: rgba(194, 225, 21, 0.978);
+  background: linear-gradient(45deg, rgba(194, 225, 21, 0.978) 10%, rgb(158, 184, 12) 100%);
+}
+
+.bg-gradient-kyoto {
+  background-color: rgba(228, 97, 0, 1);
+  background: linear-gradient(45deg, rgba(228, 97, 0, 1) 10%, rgba(136, 16, 0, 1) 100%);
+}
+
+.bg-gradient-blues {
+  background-color: rgb(0, 227, 254);
+  background: linear-gradient(45deg, rgb(0, 227, 254) 0%, rgb(24, 125, 202) 80%);
+}
+
+.bg-gradient-moonlit {
+  background-color: rgb(0, 128, 128);
+  background: linear-gradient(45deg, rgb(0, 128, 128) 0%, rgb(23, 105, 99) 100%);
+}
+
+.bg-gradient-langEsp {
+  background: rgb(214, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgb(237, 28, 39) 0%,
+    rgb(237, 28, 39) 33.3%,
+    rgba(254, 224, 0, 1) 33.3%,
+    rgba(254, 224, 0, 1) 66.3%,
+    rgb(237, 28, 39) 66.3%,
+    rgb(237, 28, 39) 100%
+  );
+}
+.bg-gradient-langEng {
+  background: rgb(214, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgb(237, 28, 39) 0%,
+    rgb(237, 28, 39) 20%,
+    rgb(255, 255, 255) 20%,
+    rgb(255, 255, 255) 40%,
+    rgb(237, 28, 39) 40%,
+    rgb(237, 28, 39) 60%,
+    rgb(255, 255, 255) 60%,
+    rgb(255, 255, 255) 80%,
+    rgb(237, 28, 39)  80%,
+    rgb(237, 28, 39) 100%
+  );
+}

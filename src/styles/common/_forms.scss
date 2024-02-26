@@ -1,0 +1,443 @@
+// ALERTS FIELDS
+.swo-text-danger * {
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(255, 0, 0, 1);
+  display: flex;
+  font-size: 0.85em;
+  margin: 0 0 0 0.8em;
+  padding: 0;
+  width: 100%;
+}
+
+// FORMS TEXT
+textarea[type='text'],
+select.form-control,
+input[type='number'],
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime-local'],
+input[type='date-picker'],
+.static {
+  margin-bottom: 10px;
+}
+.light-theme .info-input-error {
+  margin-bottom: 5px;
+}
+// FORMS
+textarea[type='text'] {
+  -webkit-border-top-left-radius: 1em;
+  -webkit-border-top-right-radius: 1em;
+  -webkit-border-bottom-right-radius: 1.5em;
+  -webkit-border-bottom-left-radius: 1em;
+
+  -moz-border-radius-topleft: 1em;
+  -moz-border-radius-topright: 1em;
+  -moz-border-radius-bottomright: 1.5em;
+  -moz-border-radius-bottomleft: 1em;
+
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1.5em;
+  border-bottom-left-radius: 1em;
+
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='number'],
+input[type='datetime-local'] ,
+input[type='date-picker']{
+  border-radius: 1.5em;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+input[type='date-picker'] {
+  -webkit-border-top-left-radius: 1.25em;
+  -webkit-border-bottom-left-radius: 1.25em;
+  -moz-border-radius-topleft: 1.25em;
+  -moz-border-radius-bottomleft: 1.25em;
+  border-top-left-radius: 1.25em;
+  border-bottom-left-radius: 1.25em;
+}
+
+select.form-control {
+  border-radius: 1.5em;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  padding: 0.3rem 0.75rem;
+  appearance: auto;
+}
+
+// VALIDATION INCORRECT INPUT
+input.ng-touched.ng-invalid {
+  border-color: rgba(255, 0, 0, 1) !important;
+}
+
+// VALIDATION INCORRECT SELECT
+select.ng-touched.ng-invalid {
+  border-color: rgba(255, 0, 0, 1) !important;
+}
+
+// ESTILOS BY FORMS
+
+.input-group {
+  button {
+    display: grid;
+    place-content: center;
+    margin: 0 0 0 0;
+    padding: 0.4em 1em !important;
+  }
+}
+
+.form-check {
+  margin: 0 0 0.4em 0;
+}
+
+.form-label,
+.form-check-label {
+  font-family: rgba(194, 225, 21, 0.978);
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 0 1em;
+}
+
+
+// INPUT TYPE SWITCH
+
+.form-check.form-switch {
+
+  input#switch,
+  input#switch_disabled {
+    width: 2.5em;
+    height: 1.4em;
+  }
+
+  .form-check-label {
+    font-size: inherit;
+  }
+}
+
+.swo-form-switch__align {
+  align-self: center;
+  padding-top: 1.3rem;
+
+  .form-switch {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    align-items: flex-end;
+    display: flex;
+    margin: 0 0 0 1.5em;
+    padding: 0 0 0 1.5em;
+
+    .form-check-label {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+    }
+
+    .form-check-input {
+      width: 2.5em;
+      height: 1.4em;
+      margin-right: 0.7em;
+      margin-left: 2.5em * -1;
+    }
+  }
+}
+
+/*******************************************************************/
+
+ngb-datepicker {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+
+  border-radius: 1em !important;
+  -webkit-border-radius: 1em !important;
+  -moz-border-radius: 1em !important;
+  -ms-border-radius: 1em !important;
+  -o-border-radius: 1em !important;
+  overflow: hidden;
+
+  .ngb-dp-header {
+    ngb-datepicker-navigation {
+      .ngb-dp-arrow {
+        .btn-link {
+          margin: 0 0.5em !important;
+          padding: 0 0 0 0 !important;
+        }
+      }
+    }
+
+    ngb-datepicker-month {
+      .ngb-dp-weekdays {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  .ngb-dp-content {
+    .ngb-dp-month {
+      ngb-datepicker-month {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+
+        .ngb-dp-week {
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+
+          .ngb-dp-day {
+            .btn-light {
+              border-radius: 0;
+              -webkit-border-radius: 0;
+              -moz-border-radius: 0;
+              -ms-border-radius: 0;
+              -o-border-radius: 0;
+            }
+
+            .outside {
+              opacity: 0.3;
+              border-radius: 0;
+              -webkit-border-radius: 0;
+              -moz-border-radius: 0;
+              -ms-border-radius: 0;
+              -o-border-radius: 0;
+            }
+
+            .text-muted {
+              opacity: 0.3;
+              font-family: rgba(194, 225, 21, 0.978);
+            }
+          }
+        }
+
+        .ngb-dp-weekdays {
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+
+          .ngb-dp-weekday {
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+ng-select.ng-select {
+  background-color: transparent;
+  font-family: rgba(194, 225, 21, 0.978);
+
+  .ng-select-container {
+    border-radius: 1.5em;
+    border-width: 1px;
+    border-style: solid;
+    font-family: rgba(194, 225, 21, 0.978);
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+  padding: 0 0.2em !important;
+  border-radius: 1.1em !important;
+}
+
+.form-control:focus-visible {
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+textarea[type='text']:disabled,
+input[type='text']:disabled,
+input[type='password']:disabled,
+input[type='date']:disabled,
+input[type='number']:disabled,
+input[type='datetime-local']:disabled,
+select.form-control:disabled,
+ng-select.ng-select.ng-select-container:disabled {
+  cursor: not-allowed;
+}
+
+
+input[type='date-picker']:focus-visible {
+  outline-color: rgb(177, 149, 252);
+
+}
+
+textarea[type='text']:-webkit-autofill,
+select.form-control:-webkit-autofill,
+input[type='number']:-webkit-autofill,
+input[type='text']:-webkit-autofill,
+input[type='password']:-webkit-autofill,
+input[type='date']:-webkit-autofill,
+input[type='datetime-local']:-webkit-autofill,
+input[type='date-picker']:-webkit-autofill,
+textarea[type='text']:-webkit-autofill:focus,
+select.form-control:-webkit-autofill:focus,
+input[type='number']:-webkit-autofill:focus,
+input[type='text']:-webkit-autofill:focus,
+input[type='password']:-webkit-autofill:focus,
+input[type='date']:-webkit-autofill:focus,
+input[type='datetime-local']:-webkit-autofill:focus,
+input[formcontrolname='date-picker']:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
+  -moz-transition: background-color 600000s 0s, color 600000s 0s;
+  -ms-transition: background-color 600000s 0s, color 600000s 0s;
+  -o-transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.swo-form-switch__align .form-switch .form-check-reverse {
+  padding-right: 2.5em;
+  padding-left: 0;
+}
+
+.swo-form-switch__align .form-switch .form-check-reverse .form-check-input {
+  margin-right: 2.5em * -1;
+  margin-left: 0;
+}
+
+.swo-form-switch__align .form-switch .form-check-input:checked {
+  background-position: right center;
+}
+
+.swo-form-switch__align .form-switch .form-check-input:focus-visible,
+.swo-form-switch__align .form-switch .form-check-input:focus {
+  outline-offset: 2px;
+  outline-style: solid;
+}
+.light-theme .text-home {
+  font-family: rgba(194, 225, 21, 0.978);;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+.light-theme .text-title {
+  font-family: rgba(194, 225, 21, 0.978);;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 28.13px;
+}
+.light-theme small.info-input {
+  margin: 0 0 0 1em;
+}
+.light-theme .button-create {
+  margin-left: auto;
+}
+.icon-drop, .icon-drop-role{
+  width: 25px;
+  filter: invert(9%) sepia(93%) saturate(7452%) hue-rotate(354deg) brightness(97%) contrast(98%);
+}
+a.is-expanded .icon-drop{
+  transform: rotate(90deg);
+}
+a.is-expanded-role .icon-drop-role{
+  transform: rotate(90deg);
+}
+ul{
+  list-style-type:none;
+}
+span.permission{
+  font-size: 13px;
+  font-family: rgba(194, 225, 21, 0.978);
+  font-weight: 400;
+}
+.info-tooltip{
+  width: 13px;
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.light-theme .card .card-body a:hover{
+  .arrow{
+    background-color: rgb(210, 10, 21);
+  }
+  .action-text {
+    color: rgb(210, 10, 21);
+
+  }
+}
+.arrow-left{
+  transform: rotate(180deg);
+}
+
+.input-productNumber{
+  padding-left: 40px;
+}
+.wrapper{
+  position: relative;
+}
+
+.static{
+  position: absolute;
+  padding: 6px;
+  font-weight: 400;
+  line-height: 1.5;
+}
