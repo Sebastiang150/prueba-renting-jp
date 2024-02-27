@@ -12,12 +12,15 @@ import { MatSortModule } from '@angular/material/sort';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './core/layout/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
+
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
