@@ -41,9 +41,11 @@ export class LoginComponent implements OnInit {
         sessionStorage.setItem('access_token', 'true');
         this.router.navigate(['/administracion']);
       } else {
+        Swal.fire({ title: 'No se pudo acceder', text: 'Usuario o contraseña incorrectos', timer: 5000, icon: 'warning' });
         sessionStorage.setItem('access_token', 'false');
       }
     }).catch((err) => {
+      this.indexedDb.reset();
       Swal.fire({ title: 'Problemas internos', text: 'El usuario no pudo ser vereficado', timer: 5000, icon: 'error' });
     });
 

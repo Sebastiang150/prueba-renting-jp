@@ -19,6 +19,16 @@ export class IndexedDBService {
     });
   }
 
+  async reset() {
+    try {
+      await indexedDB.deleteDatabase(this.name);
+      await this.createDB();
+      console.log('Base de datos eliminada y recreada con éxito');
+    } catch (error) {
+      console.error('Error al eliminar la base de datos:', error);
+    }
+  }
+
   async updateUser(dataUser: Login) {
     const db = await openDB(this.name, 1);
     const item = await db.getKey('User', dataUser.user as string);
@@ -33,7 +43,7 @@ export class IndexedDBService {
   async getUser(dataUser: Login): Promise<boolean> {
     const db = await openDB(this.name, 1);
     const item = (await db.getAll('User')).find(x => x.user === dataUser.user);
-    if(item.password === dataUser.password) {
+    if (item && item.password === dataUser.password) {
       return true;
     }
     return false;

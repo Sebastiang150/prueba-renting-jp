@@ -41,6 +41,7 @@ export class RegisterComponent implements OnInit {
     this.indexedDb.updateUser(this.formRegister.value).then(() => {
       this.formRegister.reset();
     }).catch((err) => {
+      this.indexedDb.reset();
       Swal.fire({ title: 'Problemas internos', text: 'El usuario no pudo ser registrado', timer: 5000, icon: 'error' });
     });
   }
