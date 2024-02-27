@@ -7,12 +7,16 @@ import {
   ValidatorFn,
   Validators
 } from '@angular/forms';
+import { IndexedDBService } from '../transversal/indexed-db.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html'
 })
 export class RegisterComponent implements OnInit {
+  constructor(private indexedDb: IndexedDBService) { }
+
   formRegister: FormGroup = new FormGroup({});
 
   ngOnInit(): void {
@@ -34,11 +38,11 @@ export class RegisterComponent implements OnInit {
   }
 
   register(): void {
-    // this.http.post(this.api + '/UserAccount/register', this.formRegister.value).subscribe({
-    //   next: () => {
-    //     this.router.navigate(['/login']);
-    //   }
-    // });
+    this.indexedDb.updateUser(this.formRegister.value).then(() => {
+      this.formRegister.reset();
+    }).catch((err) => {
+      Swal.fire({ title: 'Problemas internos', text: 'El usuario no pudo ser registrado', timer: 5000, icon: 'error' });
+    });
   }
 
   getFormControl(control: string) {

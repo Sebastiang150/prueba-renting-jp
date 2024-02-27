@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
+import { IndexedDBService } from './transversal/indexed-db.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'prueba-renting-jp';
+  constructor(
+    readonly indexedDBService: IndexedDBService
+  ) {
+
+    this.indexedDBService.createDB();
+  }
 }
